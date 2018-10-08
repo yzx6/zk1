@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <ul class="uls">
+
+    </ul>
+    <script>
+        var uls = document.querySelector(".uls");
+        ($(function() {
+            $.ajax({
+                url: "../js/data.json",
+                success: function(data) {
+                    rende(data)
+                }
+            })
+        }))
+
+        function rende(data) {
+            data.map(function(v) {
+                uls.innerHTML += `
+            <li>
+            <h3><b><input type="radio">${v.name}</b> <b>${v.day}</b></h3>
+            <p><span>${v.cpu}</span><span>${v.neicun}</span></p>
+            <p><span>${v.xt}</span><span>${v.sj}</span></p>
+            </li>
+            `
+            })
+        }
+        $(".uls").on("click", "li", function() {
+            this.style = "border: 1px solid #f00"
+        })
+    </script>
+</body>
+
+</html>

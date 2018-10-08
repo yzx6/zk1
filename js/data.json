@@ -1,0 +1,33 @@
+[{
+        "name": "Mysql",
+        "cpu": "2核cpu",
+        "neicun": "4G内存",
+        "xt": "40G系统盘",
+        "sj": "100G数据盘",
+        "day": "30天"
+    },
+    {
+        "name": "PostgreSQL",
+        "cpu": "2核cpu",
+        "neicun": "4G内存",
+        "xt": "40G系统盘",
+        "sj": "100G数据盘",
+        "day": "30天"
+    },
+    {
+        "name": "SQL server",
+        "cpu": "2核cpu",
+        "neicun": "4G内存",
+        "xt": "40G系统盘",
+        "sj": "100G数据盘",
+        "day": "60天"
+    },
+    {
+        "name": "MongoDB",
+        "cpu": "2核cpu",
+        "neicun": "4G内存",
+        "xt": "40G系统盘",
+        "sj": "100G数据盘",
+        "day": "60天"
+    }
+]
